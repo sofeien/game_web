@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>逗比人生</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--[if lt IE9]>
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+        div.container {
+            background-color: black;
+            color: rgb(0, 174, 104);
+            padding: 10px;
+            font-family: "Microsoft Yahei"
+        }
+        
+        div#path {
+            border-left: 2px dashed green;
+            height: 500px;
+        }
+        
+        div#box {
+            height: 493px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        div#info {
+            border: 2px solid green;
+            border-radius: 10px;
+            height: 542px;
+            color: white;
+        }
+        
+        div#event {
+            height: inherit;
+            border: 2px solid green;
+            border-radius: 10px;
+            background-color: rgb(0, 161, 98);
+        }
+        
+        div#showEvent {
+            font-size: 20px;
+            height: inherit;
+            padding-top: 40px;
+            font-weight: 600;
+        }
+        
+        div#showChoice {
+            padding-top: 15px;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: flex-start;
+            height: inherit;
+        }
+        
+        div.choice {
+            border: 2px solid green;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 8px;
+            cursor: pointer;
+            color: black;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-align: center;
+            background-color: rgb(0, 216, 127);
+        }
+        
+        span#peroid {
+            font-size: 30px;
+            position: relative;
+            left: 20%;
+        }
+        
+        h1 {
+            margin-top: 0;
+        }
+        
+        h3,
+        p {
+            margin: 0;
+            font-weight: 700;
+        }
+        
+        p.detail {
+            margin: 10px 30px;
+        }
+        
+        div.step {
+            background-color: rgb(0, 84, 50);
+            width: 90%;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+        }
+        
+        div.tag {
+            border: 1px solid white;
+            height: 30px;
+            line-height: 30px;
+            width: 80%;
+            margin: auto;
+            background-color: rgb(0, 126, 0);
+            text-align: center;
+        }
+        
+        div#name {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+        
+        div#msg {
+            text-align: center;
+            padding: 8px;
+        }
+        
+        div#msg span:first-child {
+            padding-right: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-sm-offset-1">
+                <div class="row">
+                    <h1>人生轨迹</h1>
+                </div>
+                <div id="path" class="row">
+                    <div id="box">
+
+                        <div class="step">
+                            <p class="text-right">1岁</p>
+                            <h3 class="text-center">学走路</h3>
+                            <p class="detail">可怜咯吃脚趾的时候突然学会了走路。可怜咯吃脚趾的时候突然学会了走路。可怜咯吃脚趾的时候突然学会了走路。</p>
+                        </div>
+                        <div class="step">
+                            <p class="text-right">1岁</p>
+                            <h3 class="text-center">学走路</h3>
+                            <p class="detail">可怜咯吃脚趾的时候突然学会了走路。</p>
+                        </div>
+                        <div class="step">
+                            <p class="text-right">1岁</p>
+                            <h3 class="text-center">学走路</h3>
+                            <p class="detail">可怜咯吃脚趾的时候突然学会了走路。</p>
+                        </div>
+                        <div class="step">
+                            <p class="text-right">1岁</p>
+                            <h3 class="text-center">学走路</h3>
+                            <p class="detail">可怜咯吃脚趾的时候突然学会了跑步。</p>
+                        </div>
+                        <div class="step">
+                            <p class="text-right">1岁</p>
+                            <h3 class="text-center">学走路</h3>
+                            <p class="detail">可怜咯吃脚趾的时候突然学会了跑步。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="info" class="col-sm-5">
+                <div id="name">可怜路</div>
+                <div id="msg"><span>5岁</span><span>男</span></div>
+                <div class="tag">高情商</div>
+                <div class="tag">脑洞</div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+        </div>
+        <div class="row">
+            <div id="event" class="col-sm-10 col-sm-offset-1" style="background:rgb(1,85,51)">
+                <div class="row" style="background-color:rgb(0,49,28)">
+                    <span id="peroid">时期</span>
+                </div>
+                <div class="row" style="height:255px">
+                    <div id="showEvent" class="col-sm-6">
+                        可怜路在学习之余，课间时间最喜欢和同学玩___
+                    </div>
+                    <div id="showChoice" class="col-sm-6">
+                        <div class="choice">选择1</div>
+                        <div class="choice">选择2</div>
+                        <div class="choice">选择2</div>
+                        <div class="choice">选择2</div>
+                        <div class="choice">选择2</div>
+                        <div class="choice">选择2</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            var scrollBox = function() {
+                var clientHeight = $('div#box').height();
+                var offsetHeight = $('div#box').get(0).scrollHeight;
+                console.log('窗口高度：' + $('div#box').height());
+                console.log('内容高度：' + $('div#box').get(0).scrollHeight);
+                if (offsetHeight > clientHeight) {
+                    $('div#box').scrollTop(offsetHeight - clientHeight);
+                }
+            }
+
+
+            scrollBox();
+        });
+    </script>
+</body>
+
+</html>
